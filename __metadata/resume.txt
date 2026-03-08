@@ -1,0 +1,41 @@
+Hello everyone,
+
+My name is Akram Khan
+
+I completed my Bachelor’s Degree in Computer Science. where I scored 60%.
+After that, I completed my Master’s Degree in Computer Applications from SAGE University, Indore, with 66%.
+
+During my academic journey, I developed a strong interest in web development and backend technologies, especially in the JavaScript ecosystem.
+
+My engineering project was a Deployr – Scale Up Your App.
+This project is designed as a deployment platform similar to Vercel or Netlify, where developers can deploy and manage their applications easily. 
+The main focus of this project was scalability, performance, and efficient application deployment.
+
+Talking about my technical skills, I mainly work in the JavaScript ecosystem.
+
+For frontend development, I use React, Next.js, React Native, and Tailwind CSS.
+
+For backend development, I use Node.js and Express.js.
+
+I also have experience working with databases like MongoDB, PostgreSQL, and Redis.
+
+Additionally, I am familiar with technologies such as Linux, Google Cloud, REST APIs, Git, WebSockets, Firebase, and Docker, which help me build scalable applications.
+
+Talking about my strengths, one of my biggest strengths is problem-solving. I enjoy breaking down complex problems and finding efficient solutions.
+Another strength is my curiosity to learn new technologies, which helps me continuously improve my skills and stay updated with modern development practices. 
+I also like building projects and experimenting with new ideas, which strengthens my practical knowledge.
+
+Talking about my weakness, sometimes when I am working on a project, I get deeply focused on solving a problem and spend extra time exploring different solutions. 
+While this helps me learn more, I am now improving my time management and prioritization to work more efficiently.
+
+My hobbies include building side projects, exploring new development tools, and learning about system design and modern software architecture.
+
+One of my achievements is that I have built multiple real-world projects using modern technologies and continuously improved my development skills 
+through practical work and experimentation.
+
+Talking about my family background, I come from a supportive family that has always encouraged me to pursue education and build a strong career.
+
+My career objective is to become a skilled software developer who can build scalable and efficient applications that solve real-world problems.
+
+In the next five years, I see myself becoming a highly experienced backend or full-stack developer, working on large-scale systems, 
+contributing to impactful technology projects, and continuously growing both technically and professionally.

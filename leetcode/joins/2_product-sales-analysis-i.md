@@ -1,4 +1,4 @@
-![alt text](./../__metadata/image3.png)
+![alt text](./../../__metadata/image3.png)
 
 ```sql
 
