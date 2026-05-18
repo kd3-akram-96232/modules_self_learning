@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>XHR Example</title>
+</head>
+<body>
+
+    <h1>Books Using XHR</h1>
+
+    <button onclick="loadBooks()">
+        Get Books
+    </button>
+
+    <ul id="books"></ul>
+
+<script>
+
+function loadBooks(){
+
+    const xhr = new XMLHttpRequest();
+
+    xhr.open('GET', 'http://localhost:3000/books');
+
+    xhr.onload = function(){
+
+        const data = JSON.parse(xhr.responseText);
+
+        let output = '';
+
+        data.forEach(book => {
+
+            output += `
+                <li>
+                    ${book.name} - ${book.author}
+                </li>
+            `;
+        });
+
+        document.getElementById('books').innerHTML = output;
+    };
+
+    xhr.send();
+}
+
+</script>
+
+</body>
+</html>

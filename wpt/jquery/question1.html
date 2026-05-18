@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery Traversal</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        div{
+            border: 2px solid black;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .box{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="grandparent">
+
+        Grand Parent
+
+        <div id="parent">
+
+            Parent
+
+            <div id="child" class="box">
+                Child
+            </div>
+
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+
+        </div>
+
+    </div>
+
+    <button id="parentBtn">
+        parent()
+    </button>
+
+    <button id="childrenBtn">
+        children()
+    </button>
+
+    <button id="findBtn">
+        find()
+    </button>
+
+    <button id="siblingsBtn">
+        siblings()
+    </button>
+
+<script>
+
+$(document).ready(function(){
+
+    // parent()
+    $('#parentBtn').click(function(){
+
+        $('#child').parent().css({
+            backgroundColor : 'yellow'
+        });
+
+    });
+
+    // children()
+    $('#childrenBtn').click(function(){
+
+        $('#parent').children().css({
+            border : '3px solid red'
+        });
+
+    });
+
+    // find()
+    $('#findBtn').click(function(){
+
+        $('#grandparent').find('p').css({
+            color : 'blue',
+            fontSize : '20px'
+        });
+
+    });
+
+    // siblings()
+    $('#siblingsBtn').click(function(){
+
+        $('#child').siblings().css({
+            backgroundColor : 'lightgreen'
+        });
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+# Virtual DOM and Diffing
+
+# What is DOM?
+
+DOM means Document Object Model.
+
+Browser converts HTML into a tree structure called DOM.
+
+Example:
+
+```html
+<h1>Hello</h1>
+```
+
+Browser creates DOM object for this element.
+
+---
+
+# Problem with Real DOM
+
+Real DOM updates are slow because browser needs to:
+
+- Repaint
+- Recalculate layout
+- Re-render elements
+
+If application is large, performance becomes slow.
+
+---
+
+# What is Virtual DOM?
+
+Virtual DOM is a lightweight copy of the Real DOM.
+
+React creates a virtual copy of UI in memory.
+
+Whenever state changes:
+
+1. React creates new Virtual DOM
+2. Compares old and new Virtual DOM
+3. Finds changed elements
+4. Updates only changed parts in Real DOM
+
+This makes React fast.
+
+---
+
+# Example
+
+Old UI:
+
+```jsx
+<h1>Hello</h1>
+```
+
+New UI:
+
+```jsx
+<h1>Hello Akram</h1>
+```
+
+React only updates text instead of whole page.
+
+---
+
+# What is Diffing?
+
+Diffing is the process of comparing:
+
+- Old Virtual DOM
+- New Virtual DOM
+
+React finds the difference between them.
+
+This process is called Diffing Algorithm.
+
+---
+
+# Benefits of Diffing
+
+- Faster rendering
+- Better performance
+- Less DOM manipulation
+- Smooth user experience
+
+---
+
+# Simple Flow
+
+```text
+State Change
+     ↓
+Create New Virtual DOM
+     ↓
+Compare Old and New DOM
+     ↓
+Find Difference (Diffing)
+     ↓
+Update Real DOM
+```

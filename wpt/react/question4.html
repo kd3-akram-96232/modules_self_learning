@@ -1,0 +1,157 @@
+# JSX Syntax in React
+
+# What is JSX?
+
+JSX means JavaScript XML.
+
+It allows writing HTML inside JavaScript.
+
+React uses JSX to create UI easily.
+
+---
+
+# Example of JSX
+
+```jsx
+function App() {
+
+  return (
+    <h1>Hello React</h1>
+  )
+
+}
+```
+
+---
+
+# JSX Rules
+
+# 1. Use className instead of class
+
+HTML:
+
+```html
+<div class="box"></div>
+```
+
+JSX:
+
+```jsx
+<div className="box"></div>
+```
+
+---
+
+# 2. Use camelCase for attributes
+
+HTML:
+
+```html
+<button onclick="test()">
+```
+
+JSX:
+
+```jsx
+<button onClick={test}>
+```
+
+---
+
+# 3. All tags must be closed
+
+HTML:
+
+```html
+<input>
+```
+
+JSX:
+
+```jsx
+<input />
+```
+
+---
+
+# 4. Wrap multiple elements inside one parent
+
+Wrong:
+
+```jsx
+return (
+  <h1>Hello</h1>
+  <p>React</p>
+)
+```
+
+Correct:
+
+```jsx
+return (
+  <div>
+    <h1>Hello</h1>
+    <p>React</p>
+  </div>
+)
+```
+
+---
+
+# 5. JavaScript inside JSX uses {}
+
+Example:
+
+```jsx
+function App() {
+
+  const name = "Akram";
+
+  return (
+    <h1>Hello {name}</h1>
+  )
+
+}
+```
+
+---
+
+# 6. Inline CSS uses object
+
+HTML:
+
+```html
+<h1 style="color:red">
+```
+
+JSX:
+
+```jsx
+<!-- <h1 style={{color:'red'}}> -->
+```
+
+---
+
+# JSX Behind the Scene
+
+JSX:
+
+```jsx
+<h1>Hello</h1>
+```
+
+Converted into:
+
+```js
+React.createElement('h1', null, 'Hello')
+```
+
+---
+
+# Benefits of JSX
+
+- Easy to write UI
+- Looks like HTML
+- Better readability
+- Faster development
+- JavaScript + HTML together

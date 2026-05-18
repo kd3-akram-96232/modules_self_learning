@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Form</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        input{
+            padding: 10px;
+            margin: 10px;
+        }
+
+        button{
+            padding: 10px;
+        }
+
+        table{
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        table, th, td{
+            border: 1px solid black;
+        }
+
+        th, td{
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Student Record</h1>
+
+    <input type="text"
+           id="name"
+           placeholder="Enter Student Name">
+
+    <input type="text"
+           id="course"
+           placeholder="Enter Course">
+
+    <button id="addBtn">
+        Add Student
+    </button>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Course</th>
+            </tr>
+        </thead>
+
+        <tbody id="tableBody">
+
+        </tbody>
+
+    </table>
+
+<script>
+
+$(document).ready(function(){
+
+    $('#addBtn').click(function(){
+
+        const name = $('#name').val();
+
+        const course = $('#course').val();
+
+        const row = `
+            <tr>
+                <td>${name}</td>
+                <td>${course}</td>
+            </tr>
+        `;
+
+        $('#tableBody').append(row);
+
+        // clear inputs
+        $('#name').val('');
+        $('#course').val('');
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>

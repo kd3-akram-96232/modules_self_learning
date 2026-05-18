@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Axios Example</title>
+
+    <!-- Axios CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+<h1>Books Using Axios</h1>
+
+<button onclick="getBooks()">
+    Get Books
+</button>
+
+<ul id="books"></ul>
+
+<script>
+
+async function getBooks(){
+
+    try{
+
+        const response = await axios.get('http://localhost:3000/books');
+
+        const data = response.data;
+
+        let output = '';
+
+        data.forEach(book => {
+
+            output += `
+                <li>
+                    ${book.name} - ${book.author}
+                </li>
+            `;
+        });
+
+        document.getElementById('books').innerHTML = output;
+
+    }
+    catch(error){
+
+        console.log(error);
+    }
+
+}
+
+</script>
+
+</body>
+</html>
