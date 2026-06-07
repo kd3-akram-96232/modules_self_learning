@@ -1,0 +1,90 @@
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 1.25rem; /* gap-x-5 = 20px */
+    row-gap: 1.25rem;    /* gap-y-5 = 20px */
+    align-items: center;
+    margin-top: 2.5rem;  /* mt-10 = 40px */
+}
+
+
+.navbar a {
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #dc3545 !important;
+}
+
+.dropdown-toggle::after {
+    margin-left: 10px;
+}
+
+.navbar {
+    backdrop-filter: blur(10px);
+}
+
+body{
+    background:#f8f9fa;
+}
+
+.card{
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-3px);
+}
+
+.food-card{
+    transition: .3s;
+    cursor: pointer;
+}
+
+.food-card:hover{
+    transform: translateY(-8px);
+}
+
+.category-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    font-size:22px;
+    font-weight:600;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+    transition:.3s;
+    cursor:pointer;
+}
+
+.category-card:hover{
+    transform:translateY(-5px);
+}
+
+body{
+    background:#f8f9fa;
+}
+
+.card {
+    transition: all .3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+section {
+    overflow: hidden;
+}
+
+.order-card {
+    transition: .3s;
+}
+
+.order-card:hover {
+    transform: translateY(-4px);
+}
+
+.order-food-image {
+    object-fit: cover;
+}
